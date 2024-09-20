@@ -1,0 +1,154 @@
+
+:root {
+    --btnColor: #213349;
+    --date1: #be8442;
+    --date2: #bc6142;
+    --date3: #bd425e;
+    --font1: "Oswald", sans-serif;
+    --footerSec2: #0b1016;
+    --prim: #131c29;
+    --grad: radial-gradient(
+        at top center,
+        #38587e,
+        #031620
+    );
+    --sec: #ff8901;
+    --tert: #f5f5f7;
+}
+
+* {box-sizing: border-box;}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font1);
+    background-color: var(--tert);
+}
+
+.content-box {
+    padding: 20px;
+    border-right: 1px solid #777;
+}
+
+.content-heading {
+    color: var(--prim);
+    font-size: calc(24px + (48 - 24) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.date-div {
+    width: 75px;
+    height: 75px;
+    border-radius: 5px;
+}
+
+.hs1-link {
+    color: #777;
+}
+
+.hs1-link:hover {
+    color: var(--tert);
+}
+
+.hs1-item {
+    border-right: 1px solid #777;
+} 
+
+.hs1-item:last-child {
+    border: none;
+}
+
+.hs2-link, .more-btn {
+    margin: 0 8px;
+    text-transform: uppercase;
+    color: var(--tert);
+    background-color: var(--btnColor);
+}
+
+@media (max-width:991px) {
+    .hs2-link {
+        margin: 0 2px;
+        font-size: 8px;
+    }
+}
+
+.hs2-link:hover {
+    background-color: var(--sec);
+}
+
+
+
+.slider {
+    width: 25px;
+    height: 25px;
+    background-color: #777;
+    border-radius: 50%;
+}
+
+.sliders {
+    width: 90px;
+    height: 30px;
+}
+
+#dateDiv1 {
+    background-color: var(--date1);
+}
+
+#dateDiv2 {
+    background-color: var(--date2);
+}
+
+#dateDiv3 {
+    background-color: var(--date3);
+}
+
+#footerSection1 {
+    width: 100%;
+    padding: 40px 0;
+    background-color: var(--prim);
+    background-image: var(--grad);
+}
+
+#footerSection2 {
+    width: 100%;
+    padding: 20px 0 40px;
+    background-color: var(--footerSec2);
+}
+
+#headerSection1 {
+    width: 100%;
+    padding: 4px 0;
+    background-color: var(--prim);
+}
+
+#headerSection2 {
+    padding: 20px 0;
+}
+
+#hs1Text, .hs1-item {
+    font-size: calc(8px + (12 - 8) * ((100vw - 300px) / (1600 - 300)));
+}
+
+#ms2Row {
+    border-top: 1px solid #777;
+}
+
+@media ( max-width: 767px ) {
+    #ms2Row, .content-box {
+        border: none;
+    }
+}
+
+#oppsList {
+    list-style-image: url(../images/chat.png);
+    padding-left: 18px;
+}
+
+#servicesList {
+    list-style-image: url('../images/cog.png');
+    padding-left: 18px;
+}
+
+#stable {
+    border-right: none;
+}
